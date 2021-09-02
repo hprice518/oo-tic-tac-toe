@@ -60,15 +60,24 @@ attr_accessor :board, :input
     end
 
     def 
-        # turn_count.even? ? "X" : "O"
+
+
         if turn_count.even? 
             "X"
         else
             "O"
         end
 
-        
+    end
     
+ # def turn
+    #     input = gets.strip
+    #     if input_to_index == true
+    #         # valid_move?(index)
+    #     else
+    #         current_player
+    #     end
 
+    # end
    
 end
