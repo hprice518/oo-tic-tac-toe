@@ -71,14 +71,24 @@ attr_accessor :board, :input
 
     end
     
- # def turn
-    #     input = gets.strip
-    #     if input_to_index == true
-    #         # valid_move?(index)
-    #     else
-    #         current_player
-    #     end
 
+    def turn
+
+        input = gets.strip
+        spot = input_to_index(input)
+
+        if valid_move?(spot)
+            move(spot,current_player)
+            display_board
+        else
+            turn
+        end
+
+    end
+
+
+    # def won?
+    #     if WIN_COMBINATIONS
     # end
    
 end
