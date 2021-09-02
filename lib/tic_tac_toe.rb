@@ -59,14 +59,15 @@ attr_accessor :board, :input
         count
     end
 
-    def 
+    def current_player
 
-
-        if turn_count.even? 
-            "X"
-        else
-            "O"
-        end
+        turn_count.even? ? "X" : "O"
+        # This is doing the same as:
+        # if turn_count.even? 
+        #     "X"
+        # else
+        #     "O"
+        # end
 
     end
     
