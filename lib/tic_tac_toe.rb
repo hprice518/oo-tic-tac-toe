@@ -66,15 +66,9 @@ attr_accessor :board, :input
         else
             "O"
         end
-    end
 
-    # def turn
-    #     input = gets.strip
-    #     if input_to_index == true
-    #         # valid_move?(index)
-    #     else
-    #         current_player
-    #     end
+        
+    
 
-    # end
+   
 end
