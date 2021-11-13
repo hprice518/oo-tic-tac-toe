@@ -88,7 +88,7 @@ attr_accessor :board, :input
 
 
     def won?
-       if WIN_COMBINATIONS.index.find_all >= 1
+       if WIN_COMBINATIONS.index >= 1
         true
        else
         false
